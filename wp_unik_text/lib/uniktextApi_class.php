@@ -5,19 +5,35 @@ class UniktextApi
     public function uniktextSinonimizeContentAuto()
     {
         add_filter('content_save_pre', [$this, 'uniktextApiContent'], 0);
+        if(doing_filter('content_save_pre')){
+            die;
+        }
     }
 
     public function uniktextSinonimizeTitleAuto(){
         add_filter('title_save_pre', [$this, 'uniktextApiTitleGo'], 0);
+        if(doing_filter('title_save_pre')){
+            die;
+        }
     }
 
     public function uniktextApiTitleGo($text)
     {
+        if(doing_filter('title_save_pre')){
+            sleep(3);
+        }
         $j = $this->uniktextApiPost($text);
+        if($j['synonymizedText'] != ''){
         return $j['synonymizedText'];
+        }else{
+            return $text;
+        }
     }
     public function uniktextApiContent($text)
     {
+        if(doing_filter('content_save_pre')){
+            sleep(3);
+        }
         $j = $this->uniktextApiPost($text);
 
         $options = get_option('wpuniktext_settings_options');
@@ -30,7 +46,7 @@ class UniktextApi
 
     public function uniktextApiPost($text)
     {
-        $url = "http://unik-text.ru/sin/api/";
+        $url = "https://unik-text.ru/sin/api/";
         $apiKey = '';
         $options = get_option('wpuniktext_settings_options');
         if (isset($options['uniktext_api'])){

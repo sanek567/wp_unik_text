@@ -2,7 +2,7 @@
 /*
 Plugin Name: Wp Unik Text
 Plugin URI: https://wp-uniktext.ru
-Description: Синонимизатор ру-текстов.
+Description: Text synonymizer.
 Version: 1.0
 Author: Alexandr Chumakov
 Author URI: https://wp-uniktext.ru

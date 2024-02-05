@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp_unik_text\n"
-"POT-Creation-Date: 2024-01-28 19:29+0300\n"
+"POT-Creation-Date: 2024-01-21 17:43+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Myname <myemail@gmail.com>\n"
 "Language-Team: My Super Team\n"
@@ -45,12 +45,12 @@ msgstr "Использование своей базы синонимов"
 msgid "Connecting a synonymizer"
 msgstr "Подключение синонимайзера"
 
-#: admin/admin.php:31 lib/wpUnikTextSettings_class.php:149
+#: admin/admin.php:31 lib/wpUnikTextSettings_class.php:144
 msgid "General settings"
 msgstr "Общие настройки"
 
-#: admin/admin.php:32 lib/wpUnikTextSettings_class.php:153
-#: lib/wpUnikTextSettings_class.php:154
+#: admin/admin.php:32 lib/wpUnikTextSettings_class.php:148
+#: lib/wpUnikTextSettings_class.php:149
 msgid "Own synonym database"
 msgstr "Своя база синонимов"
 
@@ -98,96 +98,88 @@ msgstr "СИНОНИМИЗИРОВАТЬ"
 msgid "Send"
 msgstr "Отправить"
 
-#: lib/wpUnikTextSettings_class.php:94
-msgid "Changed:"
-msgstr "Изменено:"
-
-#: lib/wpUnikTextSettings_class.php:95
-msgid "text"
-msgstr "текста"
-
-#: lib/wpUnikTextSettings_class.php:103
+#: lib/wpUnikTextSettings_class.php:98
 msgid "UnikText Setting Page"
 msgstr "Найстройки Unik Text"
 
-#: lib/wpUnikTextSettings_class.php:104
+#: lib/wpUnikTextSettings_class.php:99
 msgid "UnikText"
 msgstr "UnikText"
 
-#: lib/wpUnikTextSettings_class.php:140
+#: lib/wpUnikTextSettings_class.php:135
 msgid "Settings"
 msgstr "Настройки"
 
-#: lib/wpUnikTextSettings_class.php:150
+#: lib/wpUnikTextSettings_class.php:145
 msgid "Synonymization"
 msgstr "Синонимизация"
 
-#: lib/wpUnikTextSettings_class.php:151
+#: lib/wpUnikTextSettings_class.php:146
 msgid "Title synonymization"
 msgstr "Синонимизация заголовка"
 
-#: lib/wpUnikTextSettings_class.php:155 lib/wpUnikTextSettings_class.php:160
-#: lib/wpUnikTextSettings_class.php:165
+#: lib/wpUnikTextSettings_class.php:150 lib/wpUnikTextSettings_class.php:155
+#: lib/wpUnikTextSettings_class.php:160
 msgid "Minimum synonymization percentage"
 msgstr "Минимальный процент синонимизации"
 
-#: lib/wpUnikTextSettings_class.php:157
+#: lib/wpUnikTextSettings_class.php:152
 msgid "Synonymizer UNIK-TEXT.RU"
 msgstr "Синонимайзер UNIK-TEXT.RU"
 
-#: lib/wpUnikTextSettings_class.php:158
+#: lib/wpUnikTextSettings_class.php:153
 msgid "Synonymizer Unik-text.ru"
 msgstr "Синонимайзер Unik-text.ru"
 
-#: lib/wpUnikTextSettings_class.php:159
+#: lib/wpUnikTextSettings_class.php:154
 msgid "ApiKey key from the site Uni-text.ru"
 msgstr "Ключ ApiKey с сайта unik-text.ru"
 
-#: lib/wpUnikTextSettings_class.php:162
+#: lib/wpUnikTextSettings_class.php:157
 msgid "Synonymizer TEXTOROBOT.RU"
 msgstr "Синонимайзер TEXTOROBOT.RU"
 
-#: lib/wpUnikTextSettings_class.php:163
+#: lib/wpUnikTextSettings_class.php:158
 msgid "Synonymizer Textorobot.ru"
 msgstr "Синонимайзер Textorobot.ru"
 
-#: lib/wpUnikTextSettings_class.php:164
+#: lib/wpUnikTextSettings_class.php:159
 msgid "ApiKey key from the site Textorobot.ru"
 msgstr "Ключ ApiKey с сайта Textorobot.ru"
 
-#: lib/wpUnikTextSettings_class.php:174
+#: lib/wpUnikTextSettings_class.php:169
 msgid "Automatic"
 msgstr "Автоматическая"
 
-#: lib/wpUnikTextSettings_class.php:174
+#: lib/wpUnikTextSettings_class.php:169
 msgid "Synonymization occurs automatically during content publication."
 msgstr "Синонимизация происходит автоматически во время публикации контента."
 
-#: lib/wpUnikTextSettings_class.php:174
+#: lib/wpUnikTextSettings_class.php:169
 msgid "Suitable for autoparsing!"
 msgstr "Подходит для автопарсинга!"
 
-#: lib/wpUnikTextSettings_class.php:175
+#: lib/wpUnikTextSettings_class.php:170
 msgid "Manual"
 msgstr "Ручная"
 
-#: lib/wpUnikTextSettings_class.php:175
+#: lib/wpUnikTextSettings_class.php:170
 msgid ""
 "Using the \"Synonymize\" button, which is located below the text editor."
 msgstr ""
 "С помощью кнопки \"Синонимизировать\", которая находится ниже текстового "
 "редактора."
 
-#: lib/wpUnikTextSettings_class.php:183
+#: lib/wpUnikTextSettings_class.php:178
 msgid "Synonymize the title"
 msgstr "Синонимизировать заголовок"
 
-#: lib/wpUnikTextSettings_class.php:192
+#: lib/wpUnikTextSettings_class.php:187
 msgid "Synonymize using your synonym database."
 msgstr "Синонимизировать с помощью своей базы синонимов."
 
-#: lib/wpUnikTextSettings_class.php:201 lib/wpUnikTextSettings_class.php:225
-#: lib/wpUnikTextSettings_class.php:249
+#: lib/wpUnikTextSettings_class.php:196 lib/wpUnikTextSettings_class.php:220
+#: lib/wpUnikTextSettings_class.php:244
 msgid ""
 "If the percentage of text changes is less, then the text is published in its "
 "original form without synonymization. (Works only in automatic mode!)"
@@ -195,36 +187,30 @@ msgstr ""
 "Если процент изменения текста меньше, то текст публикуется в исходном виде "
 "без синонимизации. (Работает только в автоматическом режиме!)"
 
-#: lib/wpUnikTextSettings_class.php:208
+#: lib/wpUnikTextSettings_class.php:203
 msgid "Synonymize using UNIK-TEXT.RU."
 msgstr "Синонимизировать с помощью UNIK-TEXT.RU."
 
-#: lib/wpUnikTextSettings_class.php:215 lib/wpUnikTextSettings_class.php:239
+#: lib/wpUnikTextSettings_class.php:210 lib/wpUnikTextSettings_class.php:234
 msgid "For the synonymizer to work, you need to purchase a symbol package at"
 msgstr "Для работы синонимайзера необходимо приобрести пакет символов на"
 
-#: lib/wpUnikTextSettings_class.php:215 lib/wpUnikTextSettings_class.php:239
+#: lib/wpUnikTextSettings_class.php:210 lib/wpUnikTextSettings_class.php:234
 msgid "and get an API key, which must be specified below."
 msgstr "и получить API-ключ, который надо указать ниже."
 
-#: lib/wpUnikTextSettings_class.php:232
+#: lib/wpUnikTextSettings_class.php:227
 msgid "Synonymize using TEXTOROBOT.RU."
-msgstr ""
+msgstr "Синонимизировать с помощью TEXTOROBOT.RU."
 
-#: lib/wpUnikTextYouBase_class.php:162
+#: lib/wpUnikTextYouBase_class.php:161
 msgid "All synonyms have been removed from the database"
 msgstr "Все синонимы удалены из базы"
 
-#: lib/wpUnikTextYouBase_class.php:172
+#: lib/wpUnikTextYouBase_class.php:171
 msgid "Incorrect data entered!"
 msgstr "Введены неправильные данные!"
 
-#: lib/wpUnikTextYouBase_class.php:183
+#: lib/wpUnikTextYouBase_class.php:182
 msgid "Synonyms have been added to the database!"
 msgstr "Синонимы добавлены в базу!"
-
-#~ msgid "Options saved."
-#~ msgstr "Настройки сохранены."
-
-#~ msgid "Настройки сохранены."
-#~ msgstr "ыфвафыва"

@@ -63,7 +63,7 @@ jQuery(document).ready(function () {
         let contentOut = xhrContent.response;
         contentOut = JSON.parse(contentOut);
         jQuery("#fieldWpUnikTextRewrittenTitle").val(contentOut.title);
-        response.textContent = ArrIn.Changed + " " + contentOut.prozent + " " + "%"+ " " + ArrIn.text;
+        response.textContent = "Changed: " + contentOut.prozent + "% text";
         tinymce
           .get("wpuniktextEditor")
           .setContent(

@@ -90,18 +90,13 @@ class WpUnikTextSettings
     public function scripts() // Add css
     {
         wp_enqueue_script('script', plugins_url() . '/wp_unik_text/js/wp_unik_text_java.js', __FILE__);
-        $arrSend = array(
-            'Changed' => __('Changed:', 'wp_unik_text'),
-            'text' => __('text', 'wp_unik_text')
-        );
-        wp_localize_script('script', 'ArrIn', $arrSend);
     }
 
     public function addMenuPage() //add admin menu
     {
         add_menu_page(
             esc_html__('UnikText Setting Page', 'wp_unik_text'),
-            esc_html__('UnikText', 'wp_unik_text'),
+            esc_html__('WpUnikText', 'wp_unik_text'),
             'manage_options',
             'all_uniktext_settings',
             [$this, 'AdminMenu'],
